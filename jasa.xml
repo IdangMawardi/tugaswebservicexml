@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasa xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="jasa.xsd">
+	<perusahaan jasa = "Global Cargo">
+<biodata>
+		<nama> Idang Mawardi</nama>
+		<alamat>jln dago barat</alamat>
+		<telepon>0222533965</telepon>
+		<email>idangmawardi@gmail.com</email>
+		<kota>Bandung</kota>
+		<provinsi>Jawa Barat</provinsi>
+		<negara>Indonesia</negara>	
+</biodata>
+<detail>
+		<paket>Reguler</paket>
+		<harga>30000</harga>
+		<isi>TV</isi>
+		<berat>8kg</berat>
+</detail>
+	</perusahaan>
+	
+	<perusahaan jasa = "JEN">
+<biodata>
+		<nama> Dodi</nama>
+		<alamat>jln Sumbawa</alamat>
+		<telepon>0222539999</telepon>
+		<email>Dodi@gmail.com</email>
+		<kota>Padang</kota>
+		<provinsi>Sumatera Barat</provinsi>
+		<negara>Indonesia</negara>	
+</biodata>
+<detail>
+		<paket>Cepat</paket>
+		<harga>50000</harga>
+		<isi>Komputer</isi>
+		<berat>9kg</berat>
+</detail>
+	</perusahaan>
+	
+	<perusahaan jasa = "LDH">
+<biodata>
+		<nama> Ayu</nama>
+		<alamat>jln Jend. Sudirman</alamat>
+		<telepon>08123000948</telepon>
+		<email>AyuLestari@gmail.com</email>
+		<kota>Denpasar</kota>
+		<provinsi>Bali</provinsi>
+		<negara>Indonesia</negara>	
+</biodata>
+<detail>
+		<paket>Reguler</paket>
+		<harga>500000</harga>
+		<isi>Motor</isi>
+		<berat>80kg</berat>
+</detail>
+	</perusahaan>
+	
+	<perusahaan jasa = "Fast Stuff">
+<biodata>
+		<nama> Joy</nama>
+		<alamat>jln Jawa </alamat>
+		<telepon>0222533965</telepon>
+		<email>Joyjordinson@gmail.com</email>
+		<kota>Pontianak</kota>
+		<provinsi>Kalimantan</provinsi>
+		<negara>Indonesia</negara>	
+</biodata>
+<detail>
+		<paket>Reguler</paket>
+		<harga>25000</harga>
+		<isi>Baju</isi>
+		<berat>12kg</berat>
+</detail>
+	</perusahaan>
+	
+	<perusahaan jasa = "Fast Come">
+<biodata>
+		<nama> Rudy</nama>
+		<alamat>jln Kalimaya</alamat>
+		<telepon>0212533465</telepon>
+		<email>Rudysimorangkir@gmail.com</email>
+		<kota>Jakarta</kota>
+		<provinsi>Jakarta</provinsi>
+		<negara>Indonesia</negara>	
+</biodata>
+<detail>
+		<paket>Cepat</paket>
+		<harga>1500000</harga>
+		<isi>Sound System</isi>
+		<berat>55kg</berat>
+</detail>
+	</perusahaan>
+</jasa>

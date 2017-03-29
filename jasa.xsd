@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="jasa">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="perusahaan"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="perusahaan">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="biodata"/>
+                <xs:element ref="detail"/>
+            </xs:sequence>
+            <xs:attribute name="jasa" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="biodata">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nama"/>
+                <xs:element ref="alamat"/>
+                <xs:element ref="telepon"/>
+                <xs:element ref="email"/>
+                <xs:element ref="kota"/>
+                <xs:element ref="provinsi"/>
+                <xs:element ref="negara"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="nama" type="xs:string"/>
+    <xs:element name="alamat" type="xs:string"/>
+    <xs:element name="telepon" type="xs:integer"/>
+    <xs:element name="email">
+    	<xs:simpleType>
+    		<xs:restriction base="xs:string">
+    			<xs:pattern
+    				value="([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})">
+    			</xs:pattern>
+    		</xs:restriction>
+    	</xs:simpleType>
+    </xs:element>
+    <xs:element name="kota" type="xs:NCName"/>
+    <xs:element name="provinsi" type="xs:string"/>
+    <xs:element name="negara" type="xs:NCName"/>
+    <xs:element name="detail">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="paket"/>
+                <xs:element ref="harga"/>
+                <xs:element ref="isi"/>
+                <xs:element ref="berat"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="paket" type="xs:NCName"/>
+    <xs:element name="harga" type="xs:integer"/>
+    <xs:element name="isi" type="xs:string"/>
+    <xs:element name="berat" type="xs:NMTOKEN"/>
+</xs:schema>
